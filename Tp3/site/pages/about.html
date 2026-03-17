@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez l'équipe IMMUBLIERE : des professionnels passionnés de l'immobilier au service de vos projets depuis 2005.">
+  <meta name="author" content="IMMUBLIERE">
+  <meta property="og:title" content="À propos – IMMUBLIERE">
+  <meta property="og:description" content="Découvrez notre histoire, nos valeurs et l'équipe qui fait la différence.">
+  <meta property="og:type" content="website">
+  <title>À propos – IMMUBLIERE</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">IMMUB<span>LIERE</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="../index.html"   role="menuitem">Accueil</a></li>
+        <li role="none"><a href="about.html"    class="active" role="menuitem">À propos</a></li>
+        <li role="none"><a href="services.html"  role="menuitem">Services</a></li>
+        <li role="none"><a href="gallery.html"   role="menuitem">Galerie</a></li>
+        <li role="none"><a href="contact.html"   role="menuitem">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold nav-cta">Nous contacter</a>
+    </div>
+  </nav>
+
+  <!-- ===== EN-TÊTE DE PAGE ===== -->
+  <header class="page-header" role="banner">
+    <div class="container">
+      <h1>À <span class="text-gold">propos</span> de nous</h1>
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="../index.html">Accueil</a> &rsaquo; À propos
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== NOTRE HISTOIRE ===== -->
+  <section class="section" aria-labelledby="histoire-title">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <!-- figure / figcaption requis -->
+          <figure>
+            <picture>
+              <!-- SRCSET & PICTURE pour images responsives -->
+              <source
+                media="(max-width: 480px)"
+                srcset="../images/about-sm.jpg 480w"
+                sizes="480px">
+              <source
+                media="(max-width: 768px)"
+                srcset="../images/about-md.jpg 768w"
+                sizes="768px">
+              <img
+                src="../images/about.jpg"
+                srcset="../images/about.jpg 1x, ../images/about@2x.jpg 2x"
+                alt="Les bureaux modernes de l'agence IMMUBLIERE à Casablanca"
+                width="600" height="450"
+                loading="lazy">
+            </picture>
+            <figcaption>Siège social IMMUBLIERE – Boulevard Mohammed V, Casablanca (2024)</figcaption>
+          </figure>
+        </div>
+        <div class="about-text">
+          <h2 id="histoire-title">Notre <span class="text-gold">Histoire</span></h2>
+          <div class="divider" style="margin:0.75rem 0 1.5rem 0"></div>
+          <p>Fondée en 2005 à Casablanca, <strong>IMMUBLIERE</strong> est née de la passion de ses fondateurs pour l'immobilier et du désir de révolutionner l'expérience client dans ce secteur.</p>
+          <p>En moins de deux décennies, nous avons accompagné plus de <strong class="text-gold">850 familles et investisseurs</strong> dans la réalisation de leurs projets immobiliers, bâtissant ainsi une réputation solide fondée sur l'excellence et la confiance.</p>
+          <p>De Casablanca à Marrakech en passant par Rabat et Tanger, notre réseau couvre l'ensemble du territoire marocain pour vous offrir les meilleures opportunités du marché.</p>
+          <div class="about-values" aria-label="Nos valeurs">
+            <div class="value-item">Transparence totale dans chaque transaction</div>
+            <div class="value-item">Expertise locale et connaissance approfondie du marché</div>
+            <div class="value-item">Accompagnement personnalisé à chaque étape</div>
+            <div class="value-item">Innovation et outils numériques de pointe</div>
+            <div class="value-item">Responsabilité sociale et développement durable</div>
+          </div>
+          <a href="contact.html" class="btn btn-gold">Rencontrons-nous</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHIFFRES CLÉS ===== -->
+  <section class="section section-alt" aria-labelledby="chiffres-title">
+    <div class="container text-center">
+      <h2 class="section-title" id="chiffres-title">IMMUBLIERE en <span class="text-gold">chiffres</span></h2>
+      <div class="divider"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;margin-top:2rem">
+        <div class="stat-box" style="position:static">
+          <div class="num">2005</div>
+          <div class="lbl">Année de fondation</div>
+        </div>
+        <div class="stat-box" style="position:static">
+          <div class="num">+850</div>
+          <div class="lbl">Biens vendus</div>
+        </div>
+        <div class="stat-box" style="position:static">
+          <div class="num">24</div>
+          <div class="lbl">Agents spécialisés</div>
+        </div>
+        <div class="stat-box" style="position:static">
+          <div class="num">6</div>
+          <div class="lbl">Villes couvertes</div>
+        </div>
+        <div class="stat-box" style="position:static">
+          <div class="num">98%</div>
+          <div class="lbl">Satisfaction client</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOTRE ÉQUIPE ===== -->
+  <section class="section" aria-labelledby="equipe-title">
+    <div class="container text-center">
+      <h2 class="section-title" id="equipe-title">Notre <span class="text-gold">équipe</span></h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Des professionnels passionnés à votre service</p>
+      <div class="team-grid">
+
+        <!-- Membre 1 -->
+        <article class="team-card">
+          <figure>
+            <picture>
+              <source media="(max-width:480px)" srcset="../images/team1-sm.jpg 480w">
+              <img
+                src="../images/team1.jpg"
+                srcset="../images/team1.jpg 1x, ../images/team1@2x.jpg 2x"
+                alt="Portrait de Yassine Benkirane, Directeur Général d'IMMUBLIERE"
+                width="400" height="400"
+                loading="lazy">
+            </picture>
+            <figcaption>
+              <h3>Yassine Benkirane</h3>
+              <div class="role">Directeur Général &amp; Co-fondateur</div>
+              <p>15 ans d'expérience dans l'immobilier de prestige. Expert en transactions haut de gamme et stratégie d'investissement.</p>
+              <div class="social-links" aria-label="Réseaux sociaux de Yassine">
+                <a href="#" aria-label="LinkedIn de Yassine">in</a>
+                <a href="#" aria-label="Twitter de Yassine">tw</a>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Membre 2 -->
+        <article class="team-card">
+          <figure>
+            <picture>
+              <source media="(max-width:480px)" srcset="../images/team2-sm.jpg 480w">
+              <img
+                src="../images/team2.jpg"
+                srcset="../images/team2.jpg 1x, ../images/team2@2x.jpg 2x"
+                alt="Portrait de Nadia Chraibi, Directrice Commerciale"
+                width="400" height="400"
+                loading="lazy">
+            </picture>
+            <figcaption>
+              <h3>Nadia Chraibi</h3>
+              <div class="role">Directrice Commerciale</div>
+              <p>Spécialiste de la relation client et de la négociation immobilière. Elle dirige notre équipe de vente avec brio.</p>
+              <div class="social-links" aria-label="Réseaux sociaux de Nadia">
+                <a href="#" aria-label="LinkedIn de Nadia">in</a>
+                <a href="#" aria-label="Twitter de Nadia">tw</a>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Membre 3 -->
+        <article class="team-card">
+          <figure>
+            <picture>
+              <source media="(max-width:480px)" srcset="../images/team3-sm.jpg 480w">
+              <img
+                src="../images/team3.jpg"
+                srcset="../images/team3.jpg 1x, ../images/team3@2x.jpg 2x"
+                alt="Portrait de Hamid Zeroual, Responsable Juridique"
+                width="400" height="400"
+                loading="lazy">
+            </picture>
+            <figcaption>
+              <h3>Hamid Zeroual</h3>
+              <div class="role">Responsable Juridique</div>
+              <p>Avocat spécialisé en droit immobilier depuis 12 ans. Il garantit la sécurité juridique de toutes nos transactions.</p>
+              <div class="social-links" aria-label="Réseaux sociaux de Hamid">
+                <a href="#" aria-label="LinkedIn de Hamid">in</a>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Membre 4 -->
+        <article class="team-card">
+          <figure>
+            <picture>
+              <source media="(max-width:480px)" srcset="../images/team4-sm.jpg 480w">
+              <img
+                src="../images/team4.jpg"
+                srcset="../images/team4.jpg 1x, ../images/team4@2x.jpg 2x"
+                alt="Portrait de Fatima Zahra El Amrani, Responsable Gestion Locative"
+                width="400" height="400"
+                loading="lazy">
+            </picture>
+            <figcaption>
+              <h3>Fatima Zahra El Amrani</h3>
+              <div class="role">Responsable Gestion Locative</div>
+              <p>Experte en gestion de patrimoine immobilier, elle assure la rentabilité et la pérennité des investissements de nos clients.</p>
+              <div class="social-links" aria-label="Réseaux sociaux de Fatima">
+                <a href="#" aria-label="LinkedIn de Fatima">in</a>
+                <a href="#" aria-label="Twitter de Fatima">tw</a>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDÉO PRÉSENTATION ===== -->
+  <section class="section section-alt" aria-labelledby="video-title">
+    <div class="container text-center">
+      <h2 class="section-title" id="video-title">Découvrez <span class="text-gold">IMMUBLIERE</span></h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Une visite virtuelle de notre agence et de nos services exclusifs</p>
+      <div style="max-width:800px;margin:0 auto;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(201,168,76,.2)">
+        <video
+          controls
+          autoplay
+          muted
+          loop
+          poster="../images/video-poster.jpg"
+          style="width:100%;display:block"
+          aria-label="Vidéo de présentation IMMUBLIERE">
+          <source src="../images/presentation.mp4" type="video/mp4">
+          <source src="../images/presentation.webm" type="video/webm">
+          <p>Votre navigateur ne supporte pas la vidéo HTML5. <a href="../images/presentation.mp4">Téléchargez la vidéo</a>.</p>
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">IMMUB<span class="text-gold">LIERE</span></div>
+          <p>Votre partenaire immobilier de confiance depuis 2005. Excellence, transparence et engagement.</p>
+          <div class="footer-social" aria-label="Réseaux sociaux">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="LinkedIn">li</a>
+            <a href="#" aria-label="Twitter">tw</a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Plan du site">
+          <h4>Plan du site</h4>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Achat Immobilier</a></li>
+            <li><a href="services.html">Location</a></li>
+            <li><a href="services.html">Gestion Locative</a></li>
+            <li><a href="services.html">Estimation</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+212522001122">☎ +212 5 22 00 11 22</a></li>
+            <li><a href="mailto:contact@immubliere.ma">✉ contact@immubliere.ma</a></li>
+            <li style="color:var(--gray);font-size:.88rem">📍 123 Bd Mohammed V,<br>&nbsp;&nbsp;&nbsp;&nbsp;Casablanca 20000</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.06)">
+      <div class="container footer-bottom">
+        <p>&copy; 2025 IMMUBLIERE. Tous droits réservés.</p>
+        <nav class="footer-links-leg" aria-label="Mentions légales">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGU</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
