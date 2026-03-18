@@ -3,56 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explorez notre galerie de propriétés d'exception : villas, appartements, riads et locaux commerciaux disponibles chez IMMUBLIERE.">
-  <meta name="author" content="IMMUBLIERE">
-  <meta property="og:title" content="Galerie – IMMUBLIERE">
-  <meta property="og:description" content="Parcourez notre sélection de biens immobiliers de prestige au Maroc.">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Galerie de biens immobiliers IMMUBLIERE : villas, appartements, riads et locaux commerciaux.">
   <title>Galerie – IMMUBLIERE</title>
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>">
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+  <!-- NAVIGATION -->
+  <nav class="navbar">
     <div class="container nav-inner">
       <a href="../index.html" class="nav-logo">IMMUB<span>LIERE</span></a>
-      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+      <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links" id="nav-links" role="menubar">
-        <li role="none"><a href="../index.html"  role="menuitem">Accueil</a></li>
-        <li role="none"><a href="about.html"     role="menuitem">À propos</a></li>
-        <li role="none"><a href="services.html"  role="menuitem">Services</a></li>
-        <li role="none"><a href="gallery.html"   class="active" role="menuitem">Galerie</a></li>
-        <li role="none"><a href="contact.html"   role="menuitem">Contact</a></li>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <a href="contact.html" class="btn btn-gold nav-cta">Nous contacter</a>
     </div>
   </nav>
 
-  <!-- ===== EN-TÊTE DE PAGE ===== -->
-  <header class="page-header" role="banner">
+  <!-- EN-TÊTE -->
+  <header class="page-header">
     <div class="container">
       <h1>Notre <span class="text-gold">Galerie</span></h1>
-      <nav class="breadcrumb" aria-label="Fil d'Ariane">
-        <a href="../index.html">Accueil</a> &rsaquo; Galerie
-      </nav>
+      <p class="breadcrumb"><a href="../index.html">Accueil</a> &rsaquo; Galerie</p>
     </div>
   </header>
 
-  <!-- ===== GALERIE ===== -->
-  <section class="section" aria-labelledby="gallery-title">
+  <!-- GALERIE -->
+  <section class="section">
     <div class="container">
       <div class="text-center" style="margin-bottom:2rem">
-        <h2 class="section-title" id="gallery-title">Nos <span class="text-gold">biens d'exception</span></h2>
+        <h2 class="section-title">Biens <span class="text-gold">d'exception</span></h2>
         <div class="divider"></div>
         <p class="section-subtitle">Filtrez par catégorie pour trouver votre bien idéal</p>
       </div>
 
       <!-- Filtres -->
-      <div class="gallery-filters" role="group" aria-label="Filtres de la galerie">
+      <div class="gallery-filters">
         <button class="filter-btn active" data-filter="all">Tous</button>
         <button class="filter-btn" data-filter="villa">Villas</button>
         <button class="filter-btn" data-filter="appartement">Appartements</button>
@@ -60,270 +53,133 @@
         <button class="filter-btn" data-filter="commercial">Commercial</button>
       </div>
 
-      <!-- Grille de galerie avec images responsives (srcset + picture) -->
-      <div class="gallery-grid" id="gallery-grid" role="list">
+      <!-- Grille avec images réelles depuis imgs/ -->
+      <div class="gallery-grid" id="gallery-grid">
 
-        <!-- Item 1 : Villa -->
-        <article class="gallery-item" data-cat="villa" role="listitem" tabindex="0"
-                 aria-label="Villa Lumineuse – Ain Diab, Casablanca"
-                 data-title="Villa Lumineuse" data-loc="Ain Diab, Casablanca">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/villa1-480.jpg 480w"
-              sizes="100vw">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/villa1-768.jpg 768w"
-              sizes="50vw">
-            <img
-              src="../images/gallery/villa1.jpg"
-              srcset="../images/gallery/villa1.jpg 1x, ../images/gallery/villa1@2x.jpg 2x"
-              alt="Villa moderne avec piscine à Ain Diab, Casablanca – 5 chambres, 650m²"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
+        <article class="gallery-item" data-cat="villa"
+                 data-title="Villa Ain Diab" data-loc="Casablanca">
+          <img src="../imgs/image1.png"
+               alt="Villa moderne avec piscine à Ain Diab, Casablanca – 5 chambres, 650m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
-              <h4>Villa Lumineuse</h4>
-              <p>📍 Ain Diab, Casablanca &nbsp;·&nbsp; 650 m² &nbsp;·&nbsp; 5 ch.</p>
+              <h4>Villa Ain Diab</h4>
+              <p>Casablanca · 650 m² · 5 ch.</p>
             </div>
           </div>
         </article>
 
-        <!-- Item 2 : Appartement -->
-        <article class="gallery-item" data-cat="appartement" role="listitem" tabindex="0"
-                 aria-label="Appartement Vue Mer – Anfa, Casablanca"
-                 data-title="Appartement Vue Mer" data-loc="Anfa, Casablanca">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/appart1-480.jpg 480w">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/appart1-768.jpg 768w">
-            <img
-              src="../images/gallery/appart1.jpg"
-              srcset="../images/gallery/appart1.jpg 1x, ../images/gallery/appart1@2x.jpg 2x"
-              alt="Appartement moderne avec vue sur la mer à Anfa – 3 chambres, 180m²"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
+        <article class="gallery-item" data-cat="appartement"
+                 data-title="Appartement Vue Mer" data-loc="Casablanca">
+          <img src="../imgs/image2.png"
+               alt="Appartement vue mer à Anfa, Casablanca – 3 chambres, 180m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Appartement Vue Mer</h4>
-              <p>📍 Anfa, Casablanca &nbsp;·&nbsp; 180 m² &nbsp;·&nbsp; 3 ch.</p>
+              <p>Anfa, Casablanca · 180 m² · 3 ch.</p>
             </div>
           </div>
         </article>
 
-        <!-- Item 3 : Riad -->
-        <article class="gallery-item" data-cat="riad" role="listitem" tabindex="0"
-                 aria-label="Riad El Bahja – Médina, Marrakech"
-                 data-title="Riad El Bahja" data-loc="Médina, Marrakech">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/riad1-480.jpg 480w">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/riad1-768.jpg 768w">
-            <img
-              src="../images/gallery/riad1.jpg"
-              srcset="../images/gallery/riad1.jpg 1x, ../images/gallery/riad1@2x.jpg 2x"
-              alt="Riad traditionnel avec patio et fontaine en médina de Marrakech – 8 suites, 450m²"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
+        <article class="gallery-item" data-cat="riad"
+                 data-title="Riad El Bahja" data-loc="Marrakech">
+          <img src="../imgs/image3.png"
+               alt="Riad traditionnel avec patio en médina de Marrakech – 8 suites, 450m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Riad El Bahja</h4>
-              <p>📍 Médina, Marrakech &nbsp;·&nbsp; 450 m² &nbsp;·&nbsp; 8 suites</p>
+              <p>Médina, Marrakech · 450 m² · 8 suites</p>
             </div>
           </div>
         </article>
 
-        <!-- Item 4 : Commercial -->
-        <article class="gallery-item" data-cat="commercial" role="listitem" tabindex="0"
-                 aria-label="Plateau de Bureaux – Centre d'Affaires, Rabat"
-                 data-title="Plateau de Bureaux" data-loc="Centre d'Affaires, Rabat">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/bureau1-480.jpg 480w">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/bureau1-768.jpg 768w">
-            <img
-              src="../images/gallery/bureau1.jpg"
-              srcset="../images/gallery/bureau1.jpg 1x, ../images/gallery/bureau1@2x.jpg 2x"
-              alt="Plateau de bureaux moderne dans le centre d'affaires de Rabat – 800m²"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
+        <article class="gallery-item" data-cat="commercial"
+                 data-title="Plateau de Bureaux" data-loc="Rabat">
+          <img src="../imgs/image4.png"
+               alt="Plateau de bureaux moderne dans le centre d'affaires de Rabat – 800m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
-              <h4>Plateau de Bureaux Premium</h4>
-              <p>📍 Centre d'Affaires, Rabat &nbsp;·&nbsp; 800 m²</p>
+              <h4>Plateau de Bureaux</h4>
+              <p>Centre d'Affaires, Rabat · 800 m²</p>
             </div>
           </div>
         </article>
 
-        <!-- Item 5 : Villa -->
-        <article class="gallery-item" data-cat="villa" role="listitem" tabindex="0"
-                 aria-label="Villa Palmeraie – Palmeraie, Marrakech"
-                 data-title="Villa Palmeraie" data-loc="Palmeraie, Marrakech">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/villa2-480.jpg 480w">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/villa2-768.jpg 768w">
-            <img
-              src="../images/gallery/villa2.jpg"
-              srcset="../images/gallery/villa2.jpg 1x, ../images/gallery/villa2@2x.jpg 2x"
-              alt="Villa de luxe dans la Palmeraie de Marrakech avec grand jardin – 7 chambres, 1200m²"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
+        <article class="gallery-item" data-cat="villa"
+                 data-title="Villa Palmeraie" data-loc="Marrakech">
+          <img src="../imgs/image5.png"
+               alt="Villa de luxe dans la Palmeraie de Marrakech – 7 chambres, 1200m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Villa Palmeraie</h4>
-              <p>📍 Palmeraie, Marrakech &nbsp;·&nbsp; 1 200 m² &nbsp;·&nbsp; 7 ch.</p>
+              <p>Palmeraie, Marrakech · 1 200 m² · 7 ch.</p>
             </div>
           </div>
         </article>
 
-        <!-- Item 6 : Appartement -->
-        <article class="gallery-item" data-cat="appartement" role="listitem" tabindex="0"
-                 aria-label="Penthouse Prestige – Agdal, Rabat"
-                 data-title="Penthouse Prestige" data-loc="Agdal, Rabat">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/appart2-480.jpg 480w">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/appart2-768.jpg 768w">
-            <img
-              src="../images/gallery/appart2.jpg"
-              srcset="../images/gallery/appart2.jpg 1x, ../images/gallery/appart2@2x.jpg 2x"
-              alt="Penthouse avec terrasse panoramique à Agdal, Rabat – 4 chambres, 320m²"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
+        <article class="gallery-item" data-cat="appartement"
+                 data-title="Penthouse Prestige" data-loc="Rabat">
+          <img src="../imgs/image6.png"
+               alt="Penthouse avec terrasse panoramique à Agdal, Rabat – 4 chambres, 320m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Penthouse Prestige</h4>
-              <p>📍 Agdal, Rabat &nbsp;·&nbsp; 320 m² &nbsp;·&nbsp; 4 ch.</p>
+              <p>Agdal, Rabat · 320 m² · 4 ch.</p>
             </div>
           </div>
         </article>
 
-        <!-- Item 7 : Commercial -->
-        <article class="gallery-item" data-cat="commercial" role="listitem" tabindex="0"
-                 aria-label="Local Commercial – Maarif, Casablanca"
-                 data-title="Local Commercial Prestige" data-loc="Maarif, Casablanca">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/commerce1-480.jpg 480w">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/commerce1-768.jpg 768w">
-            <img
-              src="../images/gallery/commerce1.jpg"
-              srcset="../images/gallery/commerce1.jpg 1x, ../images/gallery/commerce1@2x.jpg 2x"
-              alt="Local commercial de prestige en rez-de-chaussée à Maarif, Casablanca – 250m²"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-text">
-              <h4>Local Commercial</h4>
-              <p>📍 Maarif, Casablanca &nbsp;·&nbsp; 250 m²</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Item 8 : Riad -->
-        <article class="gallery-item" data-cat="riad" role="listitem" tabindex="0"
-                 aria-label="Riad Andalou – Médina, Fès"
-                 data-title="Riad Andalou" data-loc="Médina, Fès">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/riad2-480.jpg 480w">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/riad2-768.jpg 768w">
-            <img
-              src="../images/gallery/riad2.jpg"
-              srcset="../images/gallery/riad2.jpg 1x, ../images/gallery/riad2@2x.jpg 2x"
-              alt="Riad andalou authentique avec zellige et bois sculpté en médina de Fès – 6 suites"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
+        <article class="gallery-item" data-cat="riad"
+                 data-title="Riad Andalou" data-loc="Fès">
+          <img src="../imgs/image1.png"
+               alt="Riad andalou authentique en médina de Fès – 6 suites">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Riad Andalou</h4>
-              <p>📍 Médina, Fès &nbsp;·&nbsp; 380 m² &nbsp;·&nbsp; 6 suites</p>
+              <p>Médina, Fès · 380 m² · 6 suites</p>
             </div>
           </div>
         </article>
 
-        <!-- Item 9 : Villa -->
-        <article class="gallery-item" data-cat="villa" role="listitem" tabindex="0"
-                 aria-label="Villa Bord de Mer – Tanger"
-                 data-title="Villa Bord de Mer" data-loc="Cap Malabata, Tanger">
-          <picture>
-            <source
-              media="(max-width: 480px)"
-              srcset="../images/gallery/villa3-480.jpg 480w">
-            <source
-              media="(max-width: 768px)"
-              srcset="../images/gallery/villa3-768.jpg 768w">
-            <img
-              src="../images/gallery/villa3.jpg"
-              srcset="../images/gallery/villa3.jpg 1x, ../images/gallery/villa3@2x.jpg 2x"
-              alt="Villa en bord de mer avec accès direct à la plage à Cap Malabata, Tanger – 4 chambres"
-              width="800" height="600"
-              loading="lazy">
-          </picture>
+        <article class="gallery-item" data-cat="commercial"
+                 data-title="Local Commercial" data-loc="Casablanca">
+          <img src="../imgs/image2.png"
+               alt="Local commercial de prestige à Maarif, Casablanca – 250m²">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-text">
+              <h4>Local Commercial</h4>
+              <p>Maarif, Casablanca · 250 m²</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-cat="villa"
+                 data-title="Villa Bord de Mer" data-loc="Tanger">
+          <img src="../imgs/image3.png"
+               alt="Villa bord de mer à Cap Malabata, Tanger – 4 chambres">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Villa Bord de Mer</h4>
-              <p>📍 Cap Malabata, Tanger &nbsp;·&nbsp; 550 m² &nbsp;·&nbsp; 4 ch.</p>
+              <p>Cap Malabata, Tanger · 550 m² · 4 ch.</p>
             </div>
           </div>
         </article>
 
-      </div><!-- /.gallery-grid -->
+      </div>
     </div>
   </section>
 
-  <!-- ===== LIGHTBOX ===== -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vue agrandie du bien">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">&times;</button>
-    <img class="lightbox-img" id="lightbox-img" src="" alt="">
-  </div>
-
-  <!-- ===== FOOTER ===== -->
-  <footer role="contentinfo">
+  <!-- FOOTER -->
+  <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="nav-logo">IMMUB<span class="text-gold">LIERE</span></div>
-          <p>Votre partenaire immobilier de confiance depuis 2005. Excellence, transparence et engagement.</p>
-          <div class="footer-social" aria-label="Réseaux sociaux">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">in</a>
-            <a href="#" aria-label="LinkedIn">li</a>
-            <a href="#" aria-label="Twitter">tw</a>
+          <p>Votre partenaire immobilier de confiance depuis 2005.</p>
+          <div class="footer-social">
+            <a href="#">f</a><a href="#">in</a><a href="#">li</a><a href="#">tw</a>
           </div>
         </div>
-        <nav class="footer-col" aria-label="Plan du site">
+        <nav class="footer-col">
           <h4>Plan du site</h4>
           <ul>
             <li><a href="../index.html">Accueil</a></li>
@@ -333,7 +189,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <nav class="footer-col" aria-label="Services">
+        <nav class="footer-col">
           <h4>Services</h4>
           <ul>
             <li><a href="services.html">Achat Immobilier</a></li>
@@ -345,9 +201,9 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+212522001122">☎ +212 5 22 00 11 22</a></li>
-            <li><a href="mailto:contact@immubliere.ma">✉ contact@immubliere.ma</a></li>
-            <li style="color:var(--gray);font-size:.88rem">📍 123 Bd Mohammed V,<br>&nbsp;&nbsp;&nbsp;&nbsp;Casablanca 20000</li>
+            <li><a href="tel:+212522001122">+212 5 22 00 11 22</a></li>
+            <li><a href="mailto:contact@immubliere.ma">contact@immubliere.ma</a></li>
+            <li style="color:var(--gray);font-size:.88rem">123 Bd Mohammed V, Casablanca</li>
           </ul>
         </div>
       </div>
@@ -355,7 +211,7 @@
     <div style="border-top:1px solid rgba(255,255,255,.06)">
       <div class="container footer-bottom">
         <p>&copy; 2025 IMMUBLIERE. Tous droits réservés.</p>
-        <nav class="footer-links-leg" aria-label="Mentions légales">
+        <nav class="footer-links-leg">
           <a href="#">Mentions légales</a>
           <a href="#">Politique de confidentialité</a>
           <a href="#">CGU</a>
@@ -365,32 +221,29 @@
   </footer>
 
   <script>
-    /* ── Hamburger ── */
+    /* Hamburger */
     const hamburger = document.getElementById('hamburger');
     const navLinks  = document.getElementById('nav-links');
     hamburger.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
-      hamburger.classList.toggle('open', open);
-      hamburger.setAttribute('aria-expanded', open);
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open');
     });
 
-    /* ── Filtres galerie ── */
+    /* Filtres galerie */
     const filterBtns = document.querySelectorAll('.filter-btn');
     const items      = document.querySelectorAll('.gallery-item');
-
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         const filter = btn.dataset.filter;
         items.forEach(item => {
-          const show = filter === 'all' || item.dataset.cat === filter;
-          item.style.display = show ? '' : 'none';
+          item.style.display = (filter === 'all' || item.dataset.cat === filter) ? '' : 'none';
         });
       });
     });
 
-    /* ── Lightbox ── */
+    /* Lightbox */
     const lightbox      = document.getElementById('lightbox');
     const lightboxImg   = document.getElementById('lightbox-img');
     const lightboxClose = document.getElementById('lightbox-close');
@@ -402,9 +255,6 @@
         lightboxImg.alt = img.alt;
         lightbox.classList.add('open');
         document.body.style.overflow = 'hidden';
-      });
-      item.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.click(); }
       });
     });
 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Travaux Pratiques - HTML & CSS</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      border-top: 4px solid var(--primary);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .card p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-align: center;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--primary-dark);
+    }
+
+    footer {
+      margin-top: auto;
+      padding-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      body { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mes Travaux Pratiques</h1>
+    <p class="subtitle">Laboratoire HTML5 & CSS3 - Développement Web</p>
+  </header>
+
+  <main class="grid">
+    
+    <!-- TP 1 -->
+    <article class="card">
+      <h2>TP 1 : Portfolio Personnel</h2>
+      <p>Création d'un CV / Portfolio en une seule page avec ancres internes, sections profil, compétences, et tableaux.</p>
+      <a href="Tp1/index.html" class="btn">Voir le TP 1</a>
+    </article>
+
+    <!-- TP 2 -->
+    <article class="card">
+      <h2>TP 2 : Formulaire d'Inscription</h2>
+      <p>Implémentation d'un formulaire HTML5 complet avec tous les types de champs, regroupements (fieldset) et validation native.</p>
+      <a href="Tp2/index.html" class="btn">Voir le TP 2</a>
+    </article>
+
+    <!-- TP 3 -->
+    <article class="card">
+      <h2>TP 3 : Site Vitrine (IMMUBLIERE)</h2>
+      <p>Réalisation d'un site complet multi-pages (5 pages) pour une agence immobilière, avec navigation, médias et design premium.</p>
+      <a href="Tp3/site/index.html" class="btn">Voir le TP 3</a>
+    </article>
+
+  </main>
+
+  <footer>
+    &copy; 2026 - Devoirs Web ENSET
+  </footer>
+
+</body>
+</html>
