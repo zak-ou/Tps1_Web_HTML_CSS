@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Galerie de biens immobiliers IMMUBLIERE : villas, appartements, riads et locaux commerciaux.">
   <title>Galerie – IMMUBLIERE</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav class="navbar">
-    <div class="container nav-inner">
+    <div class="container nav-inner clearfix">
       <a href="../index.html" class="nav-logo">IMMUB<span>LIERE</span></a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-links">
+      <ul class="nav-links">
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="about.html">À propos</a></li>
         <li><a href="services.html">Services</a></li>
@@ -27,7 +22,6 @@
     </div>
   </nav>
 
-  <!-- EN-TÊTE -->
   <header class="page-header">
     <div class="container">
       <h1>Notre <span class="text-gold">Galerie</span></h1>
@@ -35,10 +29,9 @@
     </div>
   </header>
 
-  <!-- GALERIE -->
   <section class="section">
     <div class="container">
-      <div class="text-center" style="margin-bottom:2rem">
+      <div class="text-center" style="margin-bottom:24px">
         <h2 class="section-title">Biens <span class="text-gold">d'exception</span></h2>
         <div class="divider"></div>
         <p class="section-subtitle">Filtrez par catégorie pour trouver votre bien idéal</p>
@@ -53,13 +46,11 @@
         <button class="filter-btn" data-filter="commercial">Commercial</button>
       </div>
 
-      <!-- Grille avec images réelles depuis imgs/ -->
-      <div class="gallery-grid" id="gallery-grid">
+      <!-- Grille -->
+      <div class="gallery-grid clearfix" id="gallery-grid">
 
-        <article class="gallery-item" data-cat="villa"
-                 data-title="Villa Ain Diab" data-loc="Casablanca">
-          <img src="../imgs/image1.png"
-               alt="Villa moderne avec piscine à Ain Diab, Casablanca – 5 chambres, 650m²">
+        <article class="gallery-item" data-cat="villa">
+          <img src="../imgs/image1.png" alt="Villa Ain Diab, Casablanca – 5 chambres, 650m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Villa Ain Diab</h4>
@@ -68,10 +59,8 @@
           </div>
         </article>
 
-        <article class="gallery-item" data-cat="appartement"
-                 data-title="Appartement Vue Mer" data-loc="Casablanca">
-          <img src="../imgs/image2.png"
-               alt="Appartement vue mer à Anfa, Casablanca – 3 chambres, 180m²">
+        <article class="gallery-item" data-cat="appartement">
+          <img src="../imgs/image2.png" alt="Appartement Vue Mer, Anfa – 3 chambres, 180m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Appartement Vue Mer</h4>
@@ -80,10 +69,8 @@
           </div>
         </article>
 
-        <article class="gallery-item" data-cat="riad"
-                 data-title="Riad El Bahja" data-loc="Marrakech">
-          <img src="../imgs/image3.png"
-               alt="Riad traditionnel avec patio en médina de Marrakech – 8 suites, 450m²">
+        <article class="gallery-item" data-cat="riad">
+          <img src="../imgs/image3.png" alt="Riad El Bahja, Marrakech – 8 suites">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Riad El Bahja</h4>
@@ -92,10 +79,8 @@
           </div>
         </article>
 
-        <article class="gallery-item" data-cat="commercial"
-                 data-title="Plateau de Bureaux" data-loc="Rabat">
-          <img src="../imgs/image4.png"
-               alt="Plateau de bureaux moderne dans le centre d'affaires de Rabat – 800m²">
+        <article class="gallery-item" data-cat="commercial">
+          <img src="../imgs/image4.png" alt="Plateau de Bureaux, Rabat – 800m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Plateau de Bureaux</h4>
@@ -104,10 +89,8 @@
           </div>
         </article>
 
-        <article class="gallery-item" data-cat="villa"
-                 data-title="Villa Palmeraie" data-loc="Marrakech">
-          <img src="../imgs/image5.png"
-               alt="Villa de luxe dans la Palmeraie de Marrakech – 7 chambres, 1200m²">
+        <article class="gallery-item" data-cat="villa">
+          <img src="../imgs/image5.png" alt="Villa Palmeraie, Marrakech – 7 chambres">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Villa Palmeraie</h4>
@@ -116,10 +99,8 @@
           </div>
         </article>
 
-        <article class="gallery-item" data-cat="appartement"
-                 data-title="Penthouse Prestige" data-loc="Rabat">
-          <img src="../imgs/image6.png"
-               alt="Penthouse avec terrasse panoramique à Agdal, Rabat – 4 chambres, 320m²">
+        <article class="gallery-item" data-cat="appartement">
+          <img src="../imgs/image6.png" alt="Penthouse Prestige, Rabat – 4 chambres">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Penthouse Prestige</h4>
@@ -128,10 +109,8 @@
           </div>
         </article>
 
-        <article class="gallery-item" data-cat="riad"
-                 data-title="Riad Andalou" data-loc="Fès">
-          <img src="../imgs/image1.png"
-               alt="Riad andalou authentique en médina de Fès – 6 suites">
+        <article class="gallery-item" data-cat="riad">
+          <img src="../imgs/image7.png" alt="Riad Andalou, Fès – 6 suites">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Riad Andalou</h4>
@@ -140,10 +119,8 @@
           </div>
         </article>
 
-        <article class="gallery-item" data-cat="commercial"
-                 data-title="Local Commercial" data-loc="Casablanca">
-          <img src="../imgs/image2.png"
-               alt="Local commercial de prestige à Maarif, Casablanca – 250m²">
+        <article class="gallery-item" data-cat="commercial">
+          <img src="../imgs/image8.png" alt="Local Commercial, Casablanca – 250m²">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Local Commercial</h4>
@@ -152,10 +129,8 @@
           </div>
         </article>
 
-        <article class="gallery-item" data-cat="villa"
-                 data-title="Villa Bord de Mer" data-loc="Tanger">
-          <img src="../imgs/image3.png"
-               alt="Villa bord de mer à Cap Malabata, Tanger – 4 chambres">
+        <article class="gallery-item" data-cat="villa">
+          <img src="../imgs/image9.png" alt="Villa Bord de Mer, Tanger – 4 chambres">
           <div class="gallery-overlay">
             <div class="gallery-overlay-text">
               <h4>Villa Bord de Mer</h4>
@@ -171,7 +146,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-grid clearfix">
         <div class="footer-brand">
           <div class="nav-logo">IMMUB<span class="text-gold">LIERE</span></div>
           <p>Votre partenaire immobilier de confiance depuis 2005.</p>
@@ -203,69 +178,43 @@
           <ul>
             <li><a href="tel:+212522001122">+212 5 22 00 11 22</a></li>
             <li><a href="mailto:contact@immubliere.ma">contact@immubliere.ma</a></li>
-            <li style="color:var(--gray);font-size:.88rem">123 Bd Mohammed V, Casablanca</li>
+            <li style="color:#8fa0b4;font-size:.85rem">123 Bd Mohammed V, Casablanca</li>
           </ul>
         </div>
       </div>
     </div>
-    <div style="border-top:1px solid rgba(255,255,255,.06)">
-      <div class="container footer-bottom">
-        <p>&copy; 2025 IMMUBLIERE. Tous droits réservés.</p>
-        <nav class="footer-links-leg">
-          <a href="#">Mentions légales</a>
-          <a href="#">Politique de confidentialité</a>
-          <a href="#">CGU</a>
-        </nav>
-      </div>
+    <div class="footer-bottom container clearfix">
+      <p>&copy; 2026 IMMUBLIERE. Tous droits réservés.</p>
+      <nav class="footer-links-leg">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">CGU</a>
+      </nav>
     </div>
   </footer>
 
   <script>
-    /* Hamburger */
-    const hamburger = document.getElementById('hamburger');
-    const navLinks  = document.getElementById('nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      hamburger.classList.toggle('open');
-    });
-
     /* Filtres galerie */
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const items      = document.querySelectorAll('.gallery-item');
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        items.forEach(item => {
-          item.style.display = (filter === 'all' || item.dataset.cat === filter) ? '' : 'none';
-        });
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    var items = document.querySelectorAll('.gallery-item');
+
+    for (var i = 0; i < filterBtns.length; i++) {
+      filterBtns[i].addEventListener('click', function() {
+        for (var j = 0; j < filterBtns.length; j++) {
+          filterBtns[j].classList.remove('active');
+        }
+        this.classList.add('active');
+        var filter = this.getAttribute('data-filter');
+        for (var k = 0; k < items.length; k++) {
+          if (filter === 'all' || items[k].getAttribute('data-cat') === filter) {
+            items[k].style.display = '';
+          } else {
+            items[k].style.display = 'none';
+          }
+        }
       });
-    });
-
-    /* Lightbox */
-    const lightbox      = document.getElementById('lightbox');
-    const lightboxImg   = document.getElementById('lightbox-img');
-    const lightboxClose = document.getElementById('lightbox-close');
-
-    items.forEach(item => {
-      item.addEventListener('click', () => {
-        const img = item.querySelector('img');
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      });
-    });
-
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-
-    function closeLightbox() {
-      lightbox.classList.remove('open');
-      document.body.style.overflow = '';
     }
   </script>
+
 </body>
 </html>
