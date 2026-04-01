@@ -193,28 +193,6 @@
     </div>
   </footer>
 
-  <script>
-    /* Filtres galerie */
-    var filterBtns = document.querySelectorAll('.filter-btn');
-    var items = document.querySelectorAll('.gallery-item');
-
-    for (var i = 0; i < filterBtns.length; i++) {
-      filterBtns[i].addEventListener('click', function() {
-        for (var j = 0; j < filterBtns.length; j++) {
-          filterBtns[j].classList.remove('active');
-        }
-        this.classList.add('active');
-        var filter = this.getAttribute('data-filter');
-        for (var k = 0; k < items.length; k++) {
-          if (filter === 'all' || items[k].getAttribute('data-cat') === filter) {
-            items[k].style.display = '';
-          } else {
-            items[k].style.display = 'none';
-          }
-        }
-      });
-    }
-  </script>
 
 </body>
 </html>
