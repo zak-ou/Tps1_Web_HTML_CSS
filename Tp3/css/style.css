@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
     clear: both;
 }
 
-/* Boutons */
+/* ── Boutons ── */
 .btn {
     display: inline-block;
     padding: 10px 24px;
@@ -94,7 +94,8 @@ h1, h2, h3, h4 {
     color: #0f1923;
 }
 
-.section-ti
+/* ── Titres de section ── */
+.section-title {
     font-size: 2rem;
     margin-bottom: 8px;
 }
@@ -127,7 +128,7 @@ h1, h2, h3, h4 {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-;
+    float: left;
     padding: 6px 0;
 }
 
@@ -206,7 +207,7 @@ h1, h2, h3, h4 {
     margin-bottom: 10px;
 }
 
-/* Stats */
+/* Stats hero */
 .hero-stats {
     overflow: hidden;
     margin-top: 20px;
@@ -426,7 +427,7 @@ h1, h2, h3, h4 {
     margin-right: 0;
 }
 
-/* Équipe */
+/* ── ÉQUIPE ── */
 .team-grid {
     overflow: hidden;
 }
@@ -515,18 +516,10 @@ h1, h2, h3, h4 {
     background-color: #1a2a3a;
     padding: 16px 20px;
     border-bottom: 1px solid rgba(201,168,76,0.15);
-    overflow: hidden;
-}
-
-.service-full-card-header .icon {
-    float: left;
-    font-size: 1.em;
-    margin-right: 12px;
 }
 
 .service-full-card-header h3 {
     font-size: 1.1rem;
-    padding-top: 4px;
 }
 
 .service-full-card-body {
@@ -563,7 +556,7 @@ summary::after {
 }
 
 details[open] summary::after {
-    content: ' −';
+    content: ' -';
 }
 
 .details-body {
@@ -583,12 +576,12 @@ details[open] summary::after {
     margin-bottom: 4px;
 }
 
-/* Tableau tarifs */
+/* ── TABLEAU TARIFS ── */
 .pricing-wrap {
     overflow-x: auto;
 }
 
-.ble {
+.pricing-table {
     width: 100%;
     border-collapse: collapse;
     min-width: 600px;
@@ -603,7 +596,6 @@ details[open] summary::after {
     color: #c9a84c;
     font-size: 0.95rem;
     text-align: center;
-    border-bottom: 2px solid rgba(201,168,76,0.3);
     border: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -632,16 +624,6 @@ details[open] summary::after {
     color: #e4c87a;
     font-weight: bold;
 }
-
-.badge {
-    display: inline-block;
-    padding: 2px 8px;
-    font-size: 0.75rem;
-    font-weight: bold;
-}
-
-.badge-gold  { background-color: rgba(201,168,76,0.2); color: 84c; }
-.badge-green { background-color: rgba(72,199,142,0.2); color: #48c78e; }
 
 /* ── GALERIE ── */
 .gallery-filters {
@@ -678,7 +660,6 @@ details[open] summary::after {
     margin-bottom: 16px;
     background-color: #243447;
     overflow: hidden;
-    position: relative;
 }
 
 .gallery-item:nth-child(3n) {
@@ -702,219 +683,38 @@ details[open] summary::after {
 }
 
 .gallery-overlay-text p {
-
-
-.footer-links-leg {
-    float: right;
-}
-
-.footer-links-leg a {
-    color: #8fa0b4;
     font-size: 0.8rem;
-    margin-left: 16px;
-}
-
-.footer-links-leg a:hover {
-    color: #c9a84c;
-}
-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 14px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-}
-
-.footer-col ul li {
-    margin-bottom: 8px;
-}
-
-.footer-col ul li a {
     color: #8fa0b4;
-    font-size: 0.85rem;
 }
 
-.footer-col ul li a:hover {
-    color: #c9a84c;
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.06);
-    padding: 16px 0;
+/* ── CONTACT ── */
+.contact-wrapper {
     overflow: hidden;
 }
 
-.footer-bottom p {
+.contact-info-col {
     float: left;
-    color: #8fa0b4;
-    font-size: 0.8rem;
-}{
-    margin-top: 14px;
-}
-
-.footer-social a {
-    display: inline-block;
-    width: 34px;
-    height: 34px;
-    background-color: rgba(201,168,76,0.12);
-    color: #c9a84c;
-    text-align: center;
-    line-height: 34px;
-    font-size: 0.85rem;
-    margin-right: 6px;
-}
-
-.footer-social a:hover {
-    background-color: #c9a84c;
-    color: #0f1923;
-}
-
-.footer-col {
-    float: left;
-    width: 20%;
-    margin-right: 2%;
-}
-
-.footer-col:last-child {
-    margin-right: 0;
-}
-
-.footer-col h4 {
-    color: #c9a84c;
-    font-
-    display: block;
-    border: none;
-}
-
-/* ── FOOTER ── */
-footer {
-    background-color: #1a2a3a;
-    border-top: 1px solid rgba(201,168,76,0.15);
-    padding: 50px 0 0;
-}
-
-.footer-grid {
-    overflow: hidden;
-    padding-bottom: 30px;
-}
-
-.footer-brand {
-    float: left;
-    width: 28%;
+    width: 34%;
     margin-right: 4%;
 }
 
-.footer-brand .nav-logo {
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-}
-
-.footer-brand p {
-    color: #8fa0b4;
-    font-size: 0.85rem;
-    line-height: 1.7;
-    max-width: 220px;
-}
-
-.footer-social 
-    margin-top: 4px;
-}
-
-.form-check {
-    overflow: hidden;
-    margin-bottom: 12px;
-}
-
-.form-check input {
+.contact-form-col {
     float: left;
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    margin-top: 2px;
+    width: 62%;
 }
 
-.form-check label {
-    display: block;
-    overflow: hidden;
-    font-size: 0.85rem;
-    color: #8fa0b4;
+.info-card {
+    background-color: #243447;
+    border: 1px solid rgba(201,168,76,0.12);
+    padding: 16px;
+    margin-bottom: 14px;
 }
 
-.form-check a {
+.info-card h4 {
     color: #c9a84c;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
 }
-
-/* Carte */
-.map-container {
-    border: 1px solid rgba(201,168,76,0.2);
-    overflow: hidden;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 360px;p textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.radio-group {
-    margin-top: 6px;
-}
-
-.radio-option {
-    display: inline-block;
-    margin-right: 16px;
-    color: #8fa0b4;
-    font-size: 0.88rem;
-    cursor: pointer;
-}
-
-.radio-option input {
-    margin-right: 4px;
-}
-
-.range-label {
-    overflow: hidden;
-    font-size: 0.78rem;
-    color: #8fa0b4;
-    margin-top: 4px;
-}
-
-.range-label span:last-child {
-    float: right;
-}
-
-.file-hint {
-    font-size: 0.78rem;
-    color: #8fa0b4;
-    display: block;olor: #8fa0b4;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    background-color: rgba(255,255,255,0.04);
-    border: 1px solid rgba(201,168,76,0.2);
-    padding: 10px 12px;
-    color: white;
-    font-size: 0.9rem;
-    font-family: inherit;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: 2px solid #c9a84c;
-}
-
-.form-group select option {
-    background-color: #1a2a3a;
-}
-
-.form-grou}
 
 .info-card p {
     color: #8fa0b4;
@@ -950,35 +750,215 @@ footer {
 .form-group label {
     display: block;
     font-size: 0.85rem;
-    c    font-size: 0.8rem;
+    color: #8fa0b4;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background-color: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,168,76,0.2);
+    padding: 10px 12px;
+    color: white;
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #c9a84c;
+}
+
+.form-group select option {
+    background-color: #1a2a3a;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.radio-group {
+    margin-top: 6px;
+}
+
+.radio-option {
+    display: inline-block;
+    margin-right: 16px;
+    color: #8fa0b4;
+    font-size: 0.88rem;
+    cursor: pointer;
+}
+
+.radio-option input {
+    margin-right: 4px;
+}
+
+.range-label {
+    overflow: hidden;
+    font-size: 0.78rem;
+    color: #8fa0b4;
+    margin-top: 4px;
+}
+
+.range-label span:last-child {
+    float: right;
+}
+
+.file-hint {
+    font-size: 0.78rem;
+    color: #8fa0b4;
+    display: block;
+    margin-top: 4px;
+}
+
+.form-check {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.form-check input {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+
+.form-check label {
+    display: block;
+    overflow: hidden;
+    font-size: 0.85rem;
     color: #8fa0b4;
 }
 
-/* ── CONTACT ── */
-.contact-wrapper {
+.form-check a {
+    color: #c9a84c;
+}
+
+/* Carte */
+.map-container {
+    border: 1px solid rgba(201,168,76,0.2);
     overflow: hidden;
 }
 
-.contact-info-col {
+.map-container iframe {
+    width: 100%;
+    height: 360px;
+    display: block;
+    border: none;
+}
+
+/* ── FOOTER ── */
+footer {
+    background-color: #1a2a3a;
+    border-top: 1px solid rgba(201,168,76,0.15);
+    padding: 50px 0 0;
+}
+
+.footer-grid {
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.footer-brand {
     float: left;
-    width: 34%;
+    width: 28%;
     margin-right: 4%;
 }
 
-.contact-form-col {
-    float: left;
-    width: 62%;
+.footer-brand .nav-logo {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
 }
 
-.info-card {
-    background-color: #243447;
-    border: 1px solid rgba(201,168,76,0.12);
-    padding: 16px;
+.footer-brand p {
+    color: #8fa0b4;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    max-width: 220px;
+}
+
+.footer-social {
+    margin-top: 14px;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: rgba(201,168,76,0.12);
+    color: #c9a84c;
+    text-align: center;
+    line-height: 34px;
+    font-size: 0.85rem;
+    margin-right: 6px;
+}
+
+.footer-social a:hover {
+    background-color: #c9a84c;
+    color: #0f1923;
+}
+
+.footer-col {
+    float: left;
+    width: 20%;
+    margin-right: 2%;
+}
+
+.footer-col:last-child {
+    margin-right: 0;
+}
+
+.footer-col h4 {
+    color: #c9a84c;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin-bottom: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #8fa0b4;
+    font-size: 0.85rem;
+}
+
+.footer-col ul li a:hover {
+    color: #c9a84c;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 16px 0;
     overflow: hidden;
 }
 
-.info-card h4 {
+.footer-bottom p {
+    float: left;
+    color: #8fa0b4;
+    font-size: 0.8rem;
+}
+
+.footer-links-leg {
+    float: right;
+}
+
+.footer-links-leg a {
+    color: #8fa0b4;
+    font-size: 0.8rem;
+    margin-left: 16px;
+}
+
+.footer-links-leg a:hover {
     color: #c9a84c;
-    margin-bottom: 6px;
-    font-size: 0.95rem;
+}
